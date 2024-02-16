@@ -1,0 +1,50 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .square {
+    background-color: rgb(143, 136, 136);
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s;
+  }
+
+  
+  .status {
+    grid-row: 1; 
+    margin-bottom: 20px;
+  }
+ 
